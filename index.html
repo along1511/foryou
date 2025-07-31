@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>National Girlfriend Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffccd5);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 640px;
+      width: 90%;
+      animation: popIn 1s ease;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      margin-bottom: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #c2185b;
+    }
+
+    .btn {
+      background-color: #ff4d88;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background-color: #e60073;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">🎥 A Little Something for You</div>
+
+    <div class="video-wrapper">
+      <video id="loveVideo" loop playsinline>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <button class="btn" onclick="document.getElementById('loveVideo').play()">▶️ Mainkan Video</button>
+    <a href="girlfriend-day.html" class="btn">💌 Buka Kad Anda</a>
+  </div>
+</body>
+</html>

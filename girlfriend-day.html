@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy National Girlfriend Day</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    .card {
+      background: rgba(255, 250, 250, 0.92);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 480px;
+      margin: 60px auto;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+      z-index: 1;
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #c2185b;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 36px;
+      color: #e91e63;
+      animation: pulse 2s infinite;
+      margin-bottom: 10px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Image -->
+  <img src="gambar.PNG" class="bg-image" />
+
+  <!-- Romantic Card -->
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Happy National Girlfriend Day</h1>
+    <p>
+      Even though we’ve gone our separate ways,<br />
+      I just wanted to say thank you for all the memories, laughter,<br />
+      and the times you made life brighter.
+    </p>
+    <p>
+      I wish that oneday we can back to be 'US',<br />
+      And you will become mine again,<br />
+      I know that you are truely tired with me,<br />
+      You are upset with me , but i just you want to know,<br />
+      That , I always love you more than you expect.
+    </p>
+    <div class="footer">~ For you 'ANJE' ~</div>
+  </div>
+
+</body>
+</html>
